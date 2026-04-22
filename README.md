@@ -68,3 +68,7 @@ npm run dev
 | POST   | /api/games            | ✓    | Add game             |
 | PUT    | /api/games/:id        | ✓    | Update game          |
 | DELETE | /api/games/:id        | ✓    | Delete game          |
+
+## Future Improvement
+- Rate Limiting
+- Pagination
