@@ -46,7 +46,7 @@ cd backend
 python -m venv .venv
 source .venv/bin/activate 
 pip install -r requirements.txt
-python app.py           # runs on :5000
+python app.py
 ```
 
 ## Frontend setup
@@ -54,7 +54,7 @@ python app.py           # runs on :5000
 ```bash
 cd frontend
 npm install
-npm run dev               # runs on :3000, proxies /api → :5000
+npm run dev
 ```
 
 ## API
