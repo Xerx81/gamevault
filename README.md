@@ -1,6 +1,6 @@
 # GameVault
 
-Game collection tracker. Flask API + React frontend.
+Game collection tracker. Flask API with Sqlite as database and React frontend.
 
 ## Site
 https://xerx81.github.io/gamevault/
