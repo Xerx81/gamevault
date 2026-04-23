@@ -76,3 +76,4 @@ npm run dev
 ## Future Improvement
 - Rate Limiting
 - Pagination
+- Unit tests for api
