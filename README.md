@@ -2,11 +2,9 @@
 
 Game collection tracker. Flask API + React frontend.
 
-## Site Link
-
-- Backend hosted on pythonanywhere and frontend hosted using github pages. 
-
+## Site
 https://xerx81.github.io/gamevault/
+- Backend hosted on pythonanywhere and frontend hosted using github pages. 
 
 ## Structure
 
