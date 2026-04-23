@@ -1,6 +1,6 @@
 // src/utils/api.js - All API calls to Flask backend
 
-const BASE = "/api";
+const BASE = "https://gameshelf.pythonanywhere.com/api";
 
 function getToken() {
   return localStorage.getItem("gv_token");
