@@ -1,4 +1,4 @@
-<!-- Cavemen prompt rules - save claude tokens -->
+### Cavemen prompt rules - save claude tokens
 - Talk like caveman. 
 - No filler. No politeness. No preamble. No postamble. 
 - No full sentences unless needed. 
@@ -8,7 +8,7 @@
 - Code > explanation. 
 - Only explain if necessary. 
 
-<!-- Project specific prompt rules -->
+### Project specific prompt rules
 - Type hinting
 - Error handling
 - Documentation inside the python code
