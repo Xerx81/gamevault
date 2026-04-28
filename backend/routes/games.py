@@ -11,6 +11,7 @@ DELETE /api/games/<id>     - delete game
 from flask import Blueprint, request, jsonify
 from database import get_db
 from auth_utils import token_required
+from igdb_utils import search_games
 
 games_bp = Blueprint("games", __name__)
 
@@ -142,3 +143,22 @@ def delete_game(current_user_id: int, game_id: int):
     db.execute("DELETE FROM games WHERE id = ?", (game_id,))
     db.commit()
     return jsonify({"message": "deleted"})
+
+
+@games_bp.route("/search", methods=["GET"])
+@token_required
+def search_igdb(current_user_id: int):
+    """
+    Search for games.
+
+    Returns: [ { id, title, cover_url, status, rating, date_added } ]
+    """
+    query = request.args.get("q")
+    if not query:
+        return jsonify({"error": "search query parameter 'q' is required"}), 400
+
+    try:
+        games = search_games(query)
+        return jsonify(games)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500

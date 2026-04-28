@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS games (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id     INTEGER NOT NULL,
+    igdb_id     INTEGER,
     title       TEXT NOT NULL,
     cover_url   TEXT,
     status      TEXT NOT NULL DEFAULT 'planned' CHECK(status IN ('planned','playing','completed')),
